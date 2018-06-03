@@ -1,3 +1,13 @@
+ /*
+
+	Kajataca.js
+ 
+
+	Autor = Armando Rojas - UNEFA 2017 
+
+*/
+
+
 var numeroAleatorio = function numeroAleatorio2(inferior,superior){ 
    	var numPosibilidades = superior - inferior 
    	var aleat = Math.random() * numPosibilidades 
@@ -188,20 +198,6 @@ String.prototype.trim = function() { return this.replace(/^\s+|\s+$/g, "")}
 			});
 		},
 
-	
-
-
-
-
-		
-		//---------------------------------
-
-		
-
-		/* Tooltip con JQuery.flyout.js */
-
-		
-	//--------
 	//---------------------------------
 	
 	/* Sistema de Enrutamiento Armando Rojas */
@@ -245,3 +241,92 @@ String.prototype.trim = function() { return this.replace(/^\s+|\s+$/g, "")}
 
 	});
 })(jQuery);
+
+
+/*	Libreria para Mostrar Hora y Fecha */
+
+const miTiempo = {
+
+	hora_local : function(){
+
+		var data = new Date(); // obtener la hora y fecha del sistema
+		var hora = data.getHours(); // obtener hora
+		var minutos = data.getMinutes(); // obtener minutos 
+		var segundos = data.getSeconds(); 
+
+		var regimen = "am"; 
+		
+		/* Agregar un 0 al izquiera si es necesario*/
+		if(hora < 10) hora = "0"+hora.toString();
+		if(minutos < 10) minutos = "0"+minutos.toString();
+		if(segundos < 10) segundos = "0"+segundos.toString();
+
+		/*Cambiar Regimen y establecer formato 12h*/
+		if(hora > 12) {
+			regimen = "pm"; 
+			hora -= 12; 
+		}
+
+			/*Devuelve Formato*/
+		return hora+":"+minutos+":"+segundos+regimen;
+	}
+};
+
+/*
+	Expresiones Regulares 
+ */
+
+function soloLetras_Numeros(){
+
+	return "{1234567890ABCDEFGHIJKMNLOPQRSTUVWXYZÑabcdefghijklmnopqrstuvwxyzñ}"
+}
+
+function soloNumeros(){
+
+	return "{1234567890}"
+}
+
+function soloLetras(){
+
+	return "{ABCDEFGHIJKMNLOPQRSTUVWXYZÑab cdefghijklmnopqrstuvwxyzñ}"
+}
+
+function soloLetras2(){
+
+	return "{ABCDEFGHIJKMNLOPQRSTUVWXYZÑab cdefghijklmnopq.rstuvwxyzñ}"
+}
+
+function soloClaves(){
+
+	return "{1234567890ABCDEFGHIJKMNLOPQRSTUVWXYZÑabcdefghijklmnopqrstuvwxyzñ.$_-@}"
+}
+
+
+ 
+/* Invocar ayuda */
+
+
+
+/*
+	
+	Manejando  AJAX 
+
+ */
+
+const ajax = function ajax( archivo, funcionAnonima , variables   ) {
+		
+
+		$.ajax({
+			url: archivo,
+			type: 'POST',
+			data: variables
+			})
+			.done(function(resp) {
+				
+				funcionAnonima(resp)
+
+			})
+			.fail(function(request) {
+				modalImagen(mensajeError)
+		})
+}
