@@ -1,0 +1,27 @@
+<script src="vanilla.js"></script>
+
+<p id="p1">P1: Soy el primer párrafo</p>
+<p id="p2">P2: Soy el segundo párrafo</p>
+<button onclick="copiarAlPortapapeles('p1')">Copiar P1</button>
+<button onclick="copiarAlPortapapeles('p2')">Copiar P2</button>
+<br/><br/>
+<input type="text" placeholder="Pega aquí para probar" />
+
+
+<style type="text/css" >
+
+#destino {
+  width:400px;
+  height:100px;
+  border:1px solid #ccc;
+}
+  
+</style>
+
+
+
+<p id="demo"><b>Caso con formato.</b></p>
+<button onclick="ejecutar('demo')">Copiar</button> 
+<br/>
+<div id="destino" contentEditable="true">
+</div>

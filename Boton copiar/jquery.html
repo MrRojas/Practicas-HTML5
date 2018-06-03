@@ -1,0 +1,28 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="uso_jquery.js"></script>
+<p id="p1">P1: Soy el primer párrafo</p>
+<p id="p2">P2: Soy el segundo párrafo</p>
+<button onclick="copyToClipboard('#p1')">Copiar P1</button>
+<button onclick="copyToClipboard('#p2')">Copiar P2</button>
+<br/>
+<br/>
+<input type="text" placeholder="Pega aquí para probar" />
+
+<br>
+<br>
+<br>
+
+<h3> Usando Libreria Externa </h3>
+
+
+<script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.3/dist/clipboard.min.js"></script>
+<script>
+	var clipboard = new Clipboard('.btn');
+</script>
+<!-- Objetivo -->
+<input id="foo" value="Texto a copiar">
+
+<!-- Disparador -->
+<button class="btn" data-clipboard-target="#foo">
+  Copiar al portapapeles
+</button>

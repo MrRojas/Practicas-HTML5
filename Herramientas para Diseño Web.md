@@ -1,4 +1,4 @@
-# Lista Con Herramientas Utilizadas para crear un buen Diseño Web
+# Lista de Herramientas utilizadas por mi
 ### By : Armando Jose Rojas Querales - 2018 
 
 
