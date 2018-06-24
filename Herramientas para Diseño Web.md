@@ -1,6 +1,8 @@
 # Lista de Herramientas utilizadas por mi
 ### By : Armando Jose Rojas Querales - 2018 
 
+## CamelCase
+https://es.wikipedia.org/wiki/CamelCase
 
 ## Descargar Fuente de Iconos Perzonalizados 
 
@@ -16,6 +18,10 @@ https://www.htmlapdf.com/
 
 https://getbootstrap.com/docs/4.0/components/card/
 
+## Documentacion de Materialize 
+
+https://materializecss.com/grid.html
+
 ## Descarga Musica de Youtube
 
 https://ytmp3.cc/
@@ -23,6 +29,11 @@ https://ytmp3.cc/
 ## Editor de Codigo 
 
 https://www.sublimetext.com/3
+
+## Librerias de Angular 
+
+google maps:
+https://angular-maps.com/
 
 ## Plugins para Sublime Text 3 
 
@@ -41,3 +52,10 @@ Este es uno de mis plugins favoritos para Sublime Text. Cuando el cursor está e
 El plugin de HTML5 resalta la sintaxis propia del lenguaje como section, main, header, footer o figure.
 
 Y hasta aquí la primera parte de los mejores plugins para Sublime Text. Próximamente tendréis una segunda parte en la que os mostraré los 15 plugins restantes. De esta selección, ¿cuál es el plugin que más os ha gustado de todos?
+
+## Instalador de Dependencias 
+*	https://bower.io/
+
+## Vendor 
+
+*	Mensajes de Alerta estilo modal https://sweetalert2.github.io/
