@@ -1,0 +1,36 @@
+	/*
+		Centrar en el medio el menu 
+	*/
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.menu{
+		margin: 0;
+
+		width: 100%;
+		background: #009688;
+		
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		display: flex;	/*Ocupa todo el espacio*/
+		align-items: center; /*Centrar los elementos*/
+		text-align: center;
+	}
+
+	.menu ul{
+		color: white;
+		flex: 1; /*Ocupar todo el espacio*/
+		list-style: none;
+		background: #E91E63;
+	
+	}
+
+	.menu li{
+		border-top: 3px solid white;
+		padding: .4em;
+	}
