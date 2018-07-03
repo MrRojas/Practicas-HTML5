@@ -4,6 +4,15 @@
 ## CamelCase
 https://es.wikipedia.org/wiki/CamelCase
 
+## Editor de Texto markdown online 
+
+https://stackedit.io/app
+
+## Sintexis markdown
+
+https://spines.me/es/help/markdown/syntax/
+
+
 ## Descargar Fuente de Iconos Perzonalizados 
 
 https://icomoon.io/ 
@@ -21,6 +30,14 @@ https://getbootstrap.com/docs/4.0/components/card/
 ## Documentacion de Materialize 
 
 https://materializecss.com/grid.html
+
+## Documentacion de photonkit, para electron 
+
+http://photonkit.com/ 
+
+## Documentacion de xel, para electron 
+
+https://xel-toolkit.org/ - muy parecido a material design.
 
 ## Descarga Musica de Youtube
 
