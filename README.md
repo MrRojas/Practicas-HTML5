@@ -1,4 +1,4 @@
-# Praticas de HTML5 y JQuery 
+# Repositorio de Cosas Usadas en mis proyectos
 ## By: Armando Jose Rojas Querales - 2018
 
 
