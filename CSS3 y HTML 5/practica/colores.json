@@ -1,3 +1,8 @@
 [
 	{ "codigo" : "#99c84a" , "titulo" : "Verde Manzana" },
+	{ "codigo" : "#466173" , "titulo" : "Azul Grizacio" },
+	{ "codigo" : "#273d47" , "titulo" : "Azul Grizacio + Oscuro" },
+	{ "codigo" : "#fafafa" , "titulo" : "Blanco" },
+	{ "codigo" : "#fd324e" , "titulo" : "Anaranjado" },
 ]
+
