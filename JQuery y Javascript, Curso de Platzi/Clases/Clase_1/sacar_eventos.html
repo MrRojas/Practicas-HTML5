@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Practica 2</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			margin: 0;
+
+			width: 100%;
+			background: #009688;
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex; 
+			align-items: center;
+			text-align: center;
+		}
+
+		.container .row{
+			flex: 1; 
+		}
+
+		button{
+			background: #f15432;
+			color: white; 
+
+			border: none;
+			padding: 2em  4em ;
+			cursor: pointer;
+			box-shadow: 1em 1em 1em black;
+
+			border-radius: 4px; 
+			transition: .3s; 
+		}
+
+		 button.pulse{
+			background: red;
+			padding: 1em  2em ;
+			
+		}
+		.rojito{
+			background: red; 
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<button id=btn > Boton</button>
+		</div>
+		
+	</div>
+	
+
+
+	
+
+
+	<script src="../../../libs/jquery/jquery.js" ></script>
+	<script>
+		
+
+		// seleccionar un elemento 
+		var boton = $(".container .row button#btn")
+
+		var foo = () => { 
+			setTimeout( () => alert("Soy Foo") ,2000 ); 
+			// aqui quitamos el bind del evento 
+			boton.off('click',foo); 
+		}
+		var poo = () => setTimeout( () => alert("Soy Poo") , 1000 );
+		var pulse = () => {
+
+			boton.toggleClass('pulse') 
+			setTimeout( () =>  boton.toggleClass('pulse') , 300 )	
+		}
+
+	
+
+		boton.on('click', pulse ).on('click', poo ).on('click',foo)
+
+
+
+
+	</script>
+	
+</body>
+</html>

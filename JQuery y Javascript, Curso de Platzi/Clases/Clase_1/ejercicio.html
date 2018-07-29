@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Practica 1</title>
+
+	<style>
+		.rojito{
+			background: red; 
+		}
+	</style>
+</head>
+<body>
+
+	<button id=btn1 > 
+		Boton 1
+	</button>
+
+
+	<button id=btn2 > 
+		Boton 2
+	</button>
+
+
+	<button id=btn3 > 
+		Boton 3
+	</button>
+	
+	<hr>
+	
+	<div class="perro">
+
+		<button id=btn4 class="like"  > 
+			Boton 4
+		</button>
+
+	
+
+		<button id=btn5 > 
+		Boton 5
+		</button>
+
+</div>
+	
+
+
+	<script src="../../../libs/jquery/jquery.js" ></script>
+	<script>
+		
+		//evento click
+		$('#btn1').click(() => 
+
+			alert('Soy el Boton 1...')
+		)
+
+
+		// Acepta de 1 eventos a N eventos 
+		$('#btn2').on('click mouseover' ,() => 
+
+			alert('Soy el Boton 2...')
+		)
+
+
+		// iterar sobre varios botones dentro de un elemento 
+		$('.perro button.like').on('click' ,(e) =>{ 
+
+			console.log($(this).closest('.perro')) 
+			$(this).closest('.perro').addClass('rojito');
+			//$(this).toggleClass('rojito')
+
+			}
+		)
+
+
+		$("#btn5").on({
+
+			"mouseleave" : ()=> {   alert("Te saliste del boton")  },
+			"click"   : () => {  alert("Aaaaaaaay un Click noooooo") }
+		})
+
+
+		//sacar eventos 
+
+
+
+
+	</script>
+	
+</body>
+</html>
