@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Practica 2</title>
+	
+	<link rel="stylesheet" href="../../../libs/bootstrap/css/bootstrap-flex.css">
+	<link rel="stylesheet" href="../../../libs/bootstrap/css/bootstrap-theme.min.css">
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.contenedor{
+			margin: 0;
+
+			width: 100%;
+			background: #009688;
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex; 
+			align-items: center;
+			text-align: center;
+
+			
+			margin-top: 2em;
+			max-height:  80%;
+			overflow-y: auto;
+		
+		}
+
+		ul{
+			flex : 1;
+			overflow-y: auto;
+			list-style: none;
+		}
+
+		li{
+			
+			border-top: 3px solid white;
+			padding: .4em;
+
+		}
+
+		button{
+			transition: .3s; 
+		}
+
+		 .pulse{
+			padding: 1em  2em ;
+			
+		}
+		.rojito{
+			background: red; 
+		}
+	</style>
+</head>
+<body>
+
+			<div class="contenedor">
+			<ul >
+				<li><a href="ejercicio.html" class="bg-warning"> ejercicio </a></li>
+				<li><a href="sacar_eventos.html" class="bg-warning"> Sacar Eventos </a></li>
+			</ul>
+			</div>
+
+
+	
+
+
+	
+
+
+	<script src="../../../libs/jquery/jquery.js" ></script>
+	<script>
+
+		var lista = $(".contenedor ul")
+
+		lista.on('click', 'li', function(event) {
+			event.preventDefault();
+			
+			lista.append('<li><a href="formulario.html" class="bg-warning"> formulario </a></li>')
+
+			
+		});
+		
+
+		// disparar el evento click
+		$("a").trigger('click')
+
+
+	</script>
+	
+</body>
+</html>
